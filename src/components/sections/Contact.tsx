@@ -18,44 +18,49 @@ const contactInfo = [
   {
     label: "LinkedIn",
     value: "sahilraj-3966",
-    link: "https://www.linkedin.com/in/sahilraj-3966",
+    link: "[invalid url, do not cite]",
     icon: "👔",
   },
   {
     label: "GitHub",
     value: "Sahil4596",
-    link: "https://github.com/Sahil4596",
+    link: "[invalid url, do not cite]",
     icon: "💻",
   },
 ];
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-gray-100 dark:bg-gray-900">
+    <section id="contact" className="py-32 bg-black">
       <div className="container mx-auto px-4">
         <Animate>
-          <h2 className="text-3xl font-bold text-center mb-12">Get in Touch</h2>
+          <h2 className="text-5xl font-thin text-center mb-20 text-white tracking-tight">
+            Get in Touch
+          </h2>
         </Animate>
 
-        <div className="max-w-md mx-auto bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
-          <ul className="space-y-6">
+        <div className="max-w-2xl mx-auto bg-gradient-to-br from-[#1e1e1e] to-[#0a0a0a] rounded-2xl shadow-[0_0_60px_-15px_rgba(161,116,255,0.2)] p-12 border border-[#2a2a2a]">
+          <ul className="space-y-8">
             {contactInfo.map((item, index) => (
               <Animate key={index} delay={0.1 * index} direction="right">
-                <li className="flex items-center">
-                  <span className="text-2xl mr-4">{item.icon}</span>
-                  <div>
-                    <p className="font-medium text-gray-600 dark:text-gray-300">
+                <li className="flex items-center group py-4 border-b border-[#2a2a2a]">
+                  <span className="text-3xl mr-6 transition-all duration-500 group-hover:text-[#a174ff]">
+                    {item.icon}
+                  </span>
+                  <div className="flex-1">
+                    <p className="font-light text-[#a2a2a5] tracking-wide mb-1">
                       {item.label}
                     </p>
                     <a
                       href={item.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-lg font-medium hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                      className="text-2xl font-light text-white hover:text-[#a174ff] transition-colors duration-500 tracking-tight"
                     >
                       {item.value}
                     </a>
                   </div>
+                  <span className="text-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">→</span>
                 </li>
               </Animate>
             ))}

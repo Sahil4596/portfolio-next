@@ -1,10 +1,11 @@
-// src/app/layout.tsx
 import type { Metadata } from "next";
 import "./globals.css";
+import ClientLayout from "@/components/ui/ClientLayout";
 
 export const metadata: Metadata = {
   title: "Sahil Jhajharia - Portfolio",
-  description: "Portfolio of Sahil Jhajharia, a full-stack software developer specializing in Next.js, Express.js, and scalable web applications.",
+  description:
+    "Portfolio of Sahil Jhajharia, a full-stack software developer specializing in Next.js, Express.js, and scalable web applications.",
 };
 
 export default function RootLayout({
@@ -14,8 +15,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
-        {children}
+      <body className="min-h-screen bg-black text-[#a2a2a5]">
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );

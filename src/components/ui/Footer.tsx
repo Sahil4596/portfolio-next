@@ -1,4 +1,3 @@
-// src/components/ui/Footer.tsx
 "use client";
 
 import { motion } from "framer-motion";
@@ -8,16 +7,20 @@ export default function Footer() {
 
   return (
     <motion.footer
-      className="bg-blue-600 text-white py-6 text-center"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
+      className="bg-black border-t border-[#2a2a2a] py-12 text-center"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7 }}
     >
       <div className="container mx-auto px-4">
-        <p>© {currentYear} Sahil Jhajharia. All rights reserved.</p>
-        <p className="mt-2 text-blue-200 text-sm">
+        <p className="text-[#a2a2a5]">© {currentYear} Sahil Jhajharia. All rights reserved.</p>
+        <motion.p
+          className="mt-3 text-[#a2a2a5] text-sm cursor-pointer transition-colors"
+          whileHover={{ color: "#a174ff" }}
+          transition={{ duration: 0.5 }}
+        >
           Crafted with Next.js, Tailwind CSS, and Framer Motion
-        </p>
+        </motion.p>
       </div>
     </motion.footer>
   );

@@ -28,24 +28,30 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 bg-gray-100 dark:bg-gray-900">
+    <section id="projects" className="py-32 bg-black">
       <div className="container mx-auto px-4">
         <Animate>
-          <h2 className="text-3xl font-bold text-center mb-12">Projects</h2>
+          <h2 className="text-5xl font-thin text-center mb-20 text-white tracking-tight">
+            Projects
+          </h2>
         </Animate>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {projects.map((project, index) => (
             <Animate key={index} delay={0.1 * index} direction="up">
-              <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 h-full flex flex-col">
-                <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
-                <p className="mb-4 flex-grow">{project.description}</p>
+              <div className="bg-gradient-to-br from-[#1e1e1e] to-[#0a0a0a] p-8 rounded-2xl shadow-[0_0_40px_-10px_rgba(161,116,255,0.1)] border border-[#2a2a2a] h-full flex flex-col transition-all duration-500 hover:shadow-[0_0_60px_-15px_rgba(161,116,255,0.3)] hover:border-[#3a3a3a]">
+                <h3 className="text-2xl font-light mb-5 text-white tracking-tight">
+                  {project.title}
+                </h3>
+                <p className="mb-6 flex-grow text-[#a2a2a5] tracking-wide leading-relaxed">
+                  {project.description}
+                </p>
 
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-2 mb-6">
                   {project.tech.map((tech, i) => (
                     <span
                       key={i}
-                      className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-3 py-1 rounded-full"
+                      className="text-xs px-3 py-1.5 rounded-full bg-[#1a1a1a] text-[#a2a2a5] border border-[#2a2a2a]"
                     >
                       {tech}
                     </span>
@@ -55,11 +61,14 @@ const Projects = () => {
                 {project.link && (
                   <a
                     href={project.link}
-                    className="text-blue-600 dark:text-blue-400 hover:underline mt-auto inline-block"
+                    className="text-white hover:text-[#a174ff] transition-colors duration-500 font-light text-lg inline-flex items-center group"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    View Project →
+                    View Project
+                    <span className="ml-2 opacity-0 group-hover:opacity-100 group-hover:ml-3 transition-all duration-500">
+                      →
+                    </span>
                   </a>
                 )}
               </div>

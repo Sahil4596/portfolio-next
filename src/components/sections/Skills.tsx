@@ -19,21 +19,23 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-20 bg-white dark:bg-gray-800">
+    <section id="skills" className="py-32 bg-black">
       <div className="container mx-auto px-4">
         <Animate>
-          <h2 className="text-3xl font-bold text-center mb-12">Skills</h2>
+          <h2 className="text-5xl font-thin text-center mb-20 text-white tracking-tight">
+            Skills
+          </h2>
         </Animate>
 
-        <div className="flex flex-wrap justify-center gap-4 max-w-3xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
           {skills.map((skill, index) => (
             <Animate
               key={skill}
               delay={0.05 * index}
-              whileHover={{ scale: 1.1 }}
+              whileHover={{ scale: 1.05 }}
               className="origin-center"
             >
-              <div className="bg-blue-600 text-white px-5 py-2.5 rounded-full font-medium shadow-md transition-all duration-300 hover:bg-blue-700 hover:shadow-lg">
+              <div className="bg-[#0f0f0f] text-[#a2a2a5] px-6 py-3 rounded-full font-light tracking-wide border border-[#2a2a2a] shadow-[0_0_15px_-5px_rgba(161,116,255,0.1)] hover:border-[#3a3a3a] hover:text-white hover:shadow-[0_0_20px_-5px_rgba(161,116,255,0.3)] transition-all duration-500">
                 {skill}
               </div>
             </Animate>
