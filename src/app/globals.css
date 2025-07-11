@@ -45,6 +45,30 @@ html {
   scrollbar-width: thin;
 }
 
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Prevent horizontal overflow on mobile */
+body, html {
+  overflow-x: hidden;
+}
+
+/* Optional: Responsive text sizing for very small screens */
+@media (max-width: 400px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+/* Optional: Make sure sections have some horizontal padding on mobile */
+section {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 animated-gradient-bg {
   min-height: 100vh;
   background: linear-gradient(270deg, #ff6ec4, #7873f5, #1fd1f9, #ff6ec4);

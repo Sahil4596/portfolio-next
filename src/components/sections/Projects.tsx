@@ -28,26 +28,26 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-32 bg-black">
-      <div className="container mx-auto px-4">
+    <section id="projects" className="py-20 sm:py-28 md:py-32 bg-black">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <Animate>
-          <h2 className="text-5xl font-thin text-center mb-20 text-white tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-thin text-center mb-10 sm:mb-16 md:mb-20 text-white tracking-tight">
             Projects
           </h2>
         </Animate>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {projects.map((project, index) => (
             <Animate key={index} delay={0.1 * index} direction="up">
-              <div className="bg-gradient-to-br from-[#1e1e1e] to-[#0a0a0a] p-8 rounded-2xl shadow-[0_0_40px_-10px_rgba(161,116,255,0.1)] border border-[#2a2a2a] h-full flex flex-col transition-all duration-500 hover:shadow-[0_0_60px_-15px_rgba(161,116,255,0.3)] hover:border-[#3a3a3a]">
-                <h3 className="text-2xl font-light mb-5 text-white tracking-tight">
+              <div className="bg-gradient-to-br from-[#1e1e1e] to-[#0a0a0a] p-6 sm:p-8 rounded-2xl shadow-[0_0_40px_-10px_rgba(161,116,255,0.1)] border border-[#2a2a2a] h-full flex flex-col transition-all duration-500 hover:shadow-[0_0_60px_-15px_rgba(161,116,255,0.3)] hover:border-[#3a3a3a]">
+                <h3 className="text-xl sm:text-2xl font-light mb-4 sm:mb-5 text-white tracking-tight">
                   {project.title}
                 </h3>
-                <p className="mb-6 flex-grow text-[#a2a2a5] tracking-wide leading-relaxed">
+                <p className="mb-4 sm:mb-6 flex-grow text-[#a2a2a5] tracking-wide leading-relaxed">
                   {project.description}
                 </p>
 
-                <div className="flex flex-wrap gap-2 mb-6">
+                <div className="flex flex-wrap gap-2 mb-4 sm:mb-6">
                   {project.tech.map((tech, i) => (
                     <span
                       key={i}
