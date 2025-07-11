@@ -10,7 +10,7 @@ const About = () => {
     >
       <div className="container mx-auto text-center px-4">
         <Animate delay={0.1}>
-          <h2 className="text-4xl font-bold mb-4">Hi, I'm Sahil Jhajharia</h2>
+          <h2 className="text-4xl font-bold mb-4">Hi, I&apos;m Sahil Jhajharia</h2>
         </Animate>
 
         <Animate delay={0.2}>
@@ -21,7 +21,7 @@ const About = () => {
 
         <Animate delay={0.3}>
           <p className="max-w-2xl mx-auto text-lg">
-            I'm a passionate software developer specializing in full-stack
+            I&apos;m a passionate software developer specializing in full-stack
             development, with expertise in building scalable web applications
             using modern frameworks like Next.js and Express.js. Based in India,
             I thrive on collaborating with teams to deliver innovative
