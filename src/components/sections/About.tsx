@@ -8,7 +8,7 @@ const About = () => {
       <div className="container mx-auto text-center px-4">
         <Animate delay={0.1}>
           <h2 className="text-5xl md:text-6xl font-bold mb-4 text-white tracking-tight">
-            Hi, I&apos;mm Sahil Jhajharia
+            Hi, I&apos;m Sahil Jhajharia
           </h2>
           <div className="mx-auto w-48 h-0.5 mt-6 mb-8 bg-gradient-to-r from-transparent via-[#a174ff] to-transparent" />
         </Animate>
