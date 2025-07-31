@@ -3,13 +3,7 @@
 import Animate from "@/components/ui/Animate";
 
 const projects = [
-  {
-    title: "Swatchh Bharat Abhiyaan DevOps Support",
-    description:
-      "Configured CI/CD pipelines using Jenkins and Docker, automating AWS deployments. Managed large-scale data (100,000+ records, 10M files) with PostgreSQL and implemented robust security measures.",
-    tech: ["Linux", "Docker", "Jenkins", "AWS", "PostgreSQL"],
-    link: "#",
-  },
+  
   {
     title: "Instant ML Deployment",
     description:
