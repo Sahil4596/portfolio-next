@@ -3,9 +3,9 @@
 import Animate from "@/components/ui/Animate";
 
 const experience = {
-  company: "SoftScript Technologies Pvt Ltd",
+  company: "Codeif Technologies Pvt Ltd",
   role: "Software Developer",
-  period: "July 2024 - Present",
+  period: "July ",
   achievements: [
     "Developed a robust admin panel using Next.js with SSR and SSG, improving performance by 40%.",
     "Optimized MySQL database schema for faster query responses and better data organization.",
