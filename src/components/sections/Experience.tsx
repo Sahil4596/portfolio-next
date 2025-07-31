@@ -3,14 +3,12 @@
 import Animate from "@/components/ui/Animate";
 
 const experience = {
-  company: "Codeif Technologies Pvt Ltd",
-  role: "Software Developer",
-  period: "July ",
+  company: "TripJack",
+  role: "Software Developer Intern",
+  period: "July 2025 - Present ",
   achievements: [
-    "Developed a robust admin panel using Next.js with SSR and SSG, improving performance by 40%.",
-    "Optimized MySQL database schema for faster query responses and better data organization.",
-    "Built scalable RESTful APIs with Express.js, ensuring clear documentation for team collaboration.",
-    "Collaborated with cross-functional teams for seamless integration and timely project delivery.",
+    "Sharpen my knowledge in avaiation industry and changes it faces.",
+   
   ],
 };
 
